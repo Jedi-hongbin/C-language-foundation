@@ -176,10 +176,8 @@ void getInputWordLength()
     printf("total: %d\n", total);
 }
 
-int main()
+void case555()
 {
-    /*    指针，即地址    */
-
     // 指针迷惑考点
     char ch[] = "iamhandsome";
     char *p = ch;
@@ -192,6 +190,31 @@ int main()
      *p + 2 = 105 + 2 = 107 107对应字母k
      *(p + 2) = m 解：ch数组顺序排列，+2就是向下移动两个从i移动到m位置，所以就是m，加几就像下移动几个
     */
+}
+
+void case666()
+{
+    char str[4][6] = {"ABCDE"};
+    printf("%s", str); // ABCDE
+    // char *s;
+    // scanf("%s", s);
+}
+
+void case777()
+{
+    int a, *pa = &a;
+    //A.scanf(“%d”,pa);
+    //B.scanf(“%d”,a);
+    //C.scanf(“%d”,&pa);
+    //D.scanf(“%d”,*pa);
+    scanf("%d", pa);
+    printf("%d \n", *pa);
+}
+
+int main()
+{
+    /*    指针，即地址    */
+
     // printf("%d", *p);// 105 -> 第一个字母i的ASCII码值
 
     // getInputWordLength();
